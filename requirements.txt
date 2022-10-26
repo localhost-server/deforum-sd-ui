@@ -3,7 +3,7 @@ git+https://github.com/openai/CLIP.git@main#egg=clip
 git+https://github.com/crowsonkb/k-diffusion.git
 -e git+https://github.com/osi1880vr/stable-diffusion#egg=stable-diffusion
 -e git+https://github.com/osi1880vr/AdaBins.git#egg=AdaBins
-git+https://github.com/isl-org/MiDaS.git#egg=MiDaS
+-e git+https://github.com/isl-org/MiDaS.git#egg=MiDaS
 -e git+https://github.com/osi1880vr/pytorch3d-lite.git#egg=pytorch3d-lite
 --find-links https://download.pytorch.org/whl/torch_stable.html
 academictorrents==2.3.3
