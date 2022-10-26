@@ -46,8 +46,8 @@ else:
 	RealESRGAN_available = False
 #
 
-import tkinter as tk
-from tkinter import filedialog
+# import tkinter as tk
+# from tkinter import filedialog
 
 
 st.session_state["generation_mode"] = "vid2vid"
@@ -370,9 +370,9 @@ def layoutFunc():
 				'defaults'].vid2vid.resume_timestring, help="Some Video Path", key='resume_timestring-vid2vid')
 
 	if videopath:
-		root = tk.Tk()
-		root.withdraw()
-		file_path = filedialog.askopenfilename()
+		# root = tk.Tk()
+		# root.withdraw()
+		file_path = None #filedialog.askopenfilename()
 		st.session_state['vid2vid']["video_init_path"] = (file_path)
 
 	if generate_button:
