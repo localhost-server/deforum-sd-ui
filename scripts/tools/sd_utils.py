@@ -57,7 +57,7 @@ from tqdm import trange
 
 # from scripts.tools.nsp.nsp_pantry import parser
 
-from tools.modelloader import load_models
+from scripts.tools.modelloader import load_models
 
 from ldm.models.diffusion.ddim import DDIMSampler
 from ldm.models.diffusion.plms import PLMSSampler
