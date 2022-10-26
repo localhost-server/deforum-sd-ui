@@ -1,6 +1,6 @@
 # base webui import and utils.
 import streamlit as st
-from tools.sd_utils import *
+from scripts.tools.sd_utils import *
 
 # streamlit imports
 
