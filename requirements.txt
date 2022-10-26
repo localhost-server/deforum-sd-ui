@@ -3,7 +3,7 @@ git+https://github.com/openai/CLIP.git@main#egg=clip
 git+https://github.com/crowsonkb/k-diffusion.git
 -e git+https://github.com/osi1880vr/stable-diffusion#egg=stable-diffusion
 -e git+https://github.com/osi1880vr/AdaBins.git#egg=AdaBins
--e git+https://github.com/osi1880vr/MiDaS.git#egg=MiDaS
+git+https://github.com/isl-org/MiDaS.git
 -e git+https://github.com/osi1880vr/pytorch3d-lite.git#egg=pytorch3d-lite
 --find-links https://download.pytorch.org/whl/torch_stable.html
 academictorrents==2.3.3
@@ -21,7 +21,6 @@ imwatermark==0.0.2
 infer==0.1
 kornia==0.6.0
 matplotlib==3.5.3
-midas==0.4.4
 natsort==8.2.0
 numpy==1.22.3
 omegaconf==2.1.1
