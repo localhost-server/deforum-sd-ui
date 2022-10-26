@@ -71,6 +71,10 @@ def saveDrawerImagesToPath(drawer):
         image.save(fpath)
         drawer_idx += 1
 def listdirs(folder):
+    if os.path.exists("outputs/_node_drawers"):
+        pass
+    else:
+        os.makedirs("outputs/_node_drawers")
     return [d for d in os.listdir(folder) if os.path.isdir(os.path.join(folder, d))]
 
 
