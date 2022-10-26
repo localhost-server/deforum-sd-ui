@@ -24,8 +24,11 @@ import warnings
 
 from scripts.tools.singleton import Singleton
 
+######DOWNLOADING MODELS
+from scripts.tools.modeldownload import dnldModels
 # end of imports
 # ---------------------------------------------------------------------------------------------------------------
+dnldModels() 
 
 try:
 	# this silences the annoying "Some weights of the model checkpoint were not used when initializing..." message at start.
