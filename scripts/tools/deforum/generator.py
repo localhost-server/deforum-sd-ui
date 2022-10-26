@@ -30,7 +30,7 @@ import sys
 import pathlib
 import gc
 
-from tools.modelloader import load_models, load_GFPGAN
+from scripts.tools.modelloader import load_models, load_GFPGAN
 import platform
 from PIL.PngImagePlugin import PngInfo
 
