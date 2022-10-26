@@ -10,8 +10,8 @@ import streamlit as st
 
 from types import SimpleNamespace
 
-from tools.deforum import generator
-from tools.deforum import video
+from scripts.tools.deforum import generator
+from scripts.tools.deforum import video
 
 
 class runner:
