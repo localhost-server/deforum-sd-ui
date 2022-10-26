@@ -36,11 +36,11 @@ def dnldModels():
     if op.exists('src/realesrgan/experiments/pretrained_models/RealESRGAN_x4plus.pth') and op.exists('src/realesrgan/experiments/pretrained_models/RealESRGAN_x4plus_anime_6B.pth'):
         pass
     else:
-        os.system('wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P src/realesrgan/experiments/pretrained_models')
-        os.system('wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth -P src/realesrgan/experiments/pretrained_models')
+        os.system('curl -L https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -o src/realesrgan/experiments/pretrained_models/RealESRGAN_x4plus.pth')
+        os.system('curl https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth -o src/realesrgan/experiments/pretrained_models/RealESRGAN_x4plus_anime_6B.pth')
     
     if op.exists('src/gfpgan/experiments/pretrained_models/GFPGANv1.4.pth'):
         pass 
     else:
-        os.system('wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth -P src/gfpgan/experiments/pretrained_models/gfpgan')
+        os.system('curl https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth -o src/gfpgan/experiments/pretrained_models/GFPGANv1.4.pth')
     
