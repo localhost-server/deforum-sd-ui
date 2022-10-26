@@ -44,3 +44,8 @@ def dnldModels():
     else:
         os.system('curl -L https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth -o src/gfpgan/experiments/pretrained_models/GFPGANv1.4.pth')
     
+    if op.exists('models/sd-clip-vit-l14-img-embed_ema_only.ckpt'):
+        pass 
+    else:
+        os.system('curl -L https://huggingface.co/lambdalabs/stable-diffusion-image-conditioned/blob/main/sd-clip-vit-l14-img-embed_ema_only.ckpt -o models/sd-clip-vit-l14-img-embed_ema_only.ckpt')
+    
